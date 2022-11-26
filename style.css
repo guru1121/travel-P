@@ -42,6 +42,9 @@ header{
     
    
 }
+body{
+    background-color: steelblue ;
+}
 .logo{
     font-size: 1rem;
     font-weight: 600;
@@ -69,8 +72,7 @@ header{
     left: 0;
     transition: 0.6s;
 }
-.navbar a:hover::after,
- .navbar .home-active::after{
+.navbar a:hover::after{
     width: 100%;
     
 }
@@ -138,7 +140,8 @@ header{
     display: flex;
     grid-template-columns: repeat(auto-fit,minimax(240px,auto));
     gap: 1.5rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 .places-container .box{
     position: relative;
@@ -183,6 +186,7 @@ header{
     display: grid;
     place-items: center;
     margin-top: 2rem;
+    overflow: auto;
 }
 .video-container video{
     width: 768px;
@@ -195,7 +199,10 @@ header{
     align-items: center;
     justify-content: center;
     gap: 1.5rem;
+    margin-top: 6rem;
+    margin: 2rem;
 }
+
 about-text h1{
     font-size: 1.7rem;
     text-transform: capitalize;
@@ -207,13 +214,17 @@ about-text h1{
     text-align: justify;
     margin: 0.5rem 0 1.7rem;
 }
-.about-img{
+.about-imag{
     margin-top:2rem;
-    width: 70%;
-    height: 80vh;
+    width: 100%;
+    height: 100%;
     overflow: hidden;
 }
-.about-img img:hover{
+.about-imag img{
+    height: 100%;
+    width: 100%;
+}
+.about-imag img:hover{
     transform: scale(1.1);
     transition: 2s;
 }
